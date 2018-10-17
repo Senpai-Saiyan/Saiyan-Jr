@@ -1,0 +1,59 @@
+{
+  "name": "some-junk",
+  "version": "5.2.0",
+  "description": "leedle leedle",
+  "main": "start.js",
+  "scripts": {
+    "test": "node bot.js",
+    "start": "node shards.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Senpai-Saiyan/some-junk.git"
+  },
+  "keywords": [
+    "Discord",
+    "Bot",
+    "discord.js"
+  ],
+  "author": "Some Guy",
+  "license": "MIT",
+  "homepage": "https://github.com/Senpai-Saiyan/some-junk",
+  "dependencies": {
+    "alex": "^6.0.0",
+    "child_process": "^1.0.2",
+    "discord.js": "^11.4.2",
+    "discord.js-musicbot-addon": "^12.0.6",
+    "emoji-random": "^0.1.2",
+    "fmylife": "^1.1.0",
+    "goo.gl": "^0.1.4",
+    "google-search": "^0.0.5",
+    "idiotic-api": "^0.2.11",
+    "imdb-api": "^4.0.2",
+    "lmgtfy": "^1.1.0",
+    "moment": "^2.22.2",
+    "moment-duration-format": "^2.2.2",
+    "my-google-news": "^3.0.0",
+    "node-opus": "^0.3.0",
+    "npm-package-info": "0.0.5",
+    "one-liner-joke": "^1.0.0",
+    "os-utils": "^0.0.14",
+    "printscreen": "^1.2.1",
+    "random-puppy": "^1.1.0",
+    "sqlite3": "^4.0.2",
+    "tba-api-storm": "^1.0.6",
+    "unirest": "^0.5.1",
+    "urban": "^0.3.1",
+    "uws": "^99.0.0",
+    "whois-json": "^2.0.3",
+    "wikijs": "^4.8.1",
+    "wikipediajs": "^1.4.0",
+    "wolfram": "^0.3.4",
+    "xkcd": "^1.1.3",
+    "xml2js": "^0.4.19",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "eslint": "^5.5.0"
+  }
+}

@@ -1,0 +1,7 @@
+# Dependency directory
+node_modules
+
+# Stuff
+start.bat
+servers.sqlite
+config.json
