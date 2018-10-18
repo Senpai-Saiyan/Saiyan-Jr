@@ -1,7 +1,7 @@
 {
-  "name": "some-junk",
+  "name": "Saiyan-Jr",
   "version": "5.2.0",
-  "description": "leedle leedle",
+  "description": "A multipurpose discord bot.",
   "main": "start.js",
   "scripts": {
     "test": "node bot.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Senpai-Saiyan/some-junk.git"
+    "url": "git+https://github.com/Senpai-Saiyan/Saiyan-Jr.git"
   },
   "keywords": [
     "Discord",
@@ -18,7 +18,7 @@
   ],
   "author": "Some Guy",
   "license": "MIT",
-  "homepage": "https://github.com/Senpai-Saiyan/some-junk",
+  "homepage": "https://github.com/Senpai-Saiyan/Saiyan-Jr",
   "dependencies": {
     "alex": "^6.0.0",
     "child_process": "^1.0.2",
