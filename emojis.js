@@ -1,20 +1,19 @@
-const Discord = require("discord.js"); //Bibliothèque Javascript de Discord
+const Discord = require("discord.js"); 
 
 var fs = require("fs");
 
-const PREFIX = "::";	//Ce qu'il y a au début de la commande, exemple ici : "-:ping"
+const PREFIX = "::";	
 const PREFIXCOMMAND = "&";
 const PREFIX_SOUND = "mak.";
 
-var bot = new Discord.Client(); // C'est pour dire que le bot est comme un utilisateur au serveur (normalement c'est ça, je sais plus, mais c'est obligatoire en gros, cherche pas xD)
-
+var bot = new Discord.Client(); 
 var file = "";
 var helpmsg = "";
 
 
-//ecrit dans la console quand le bot est pret
+
 bot.on("ready", function () {
-    console.log("Ready")
+    console.log("Emojis are active")
 	bot.user.setStatus("online");
 })
 
@@ -29,7 +28,7 @@ bot.on("message", function (message) {
 		var ListEmoji = emojiList.split("#");			
 		var pageTot = Math.floor(ListEmoji.length / 25);
 		
-		switch (args[0].toLowerCase()) {		//commands with // prefix	
+		switch (args[0].toLowerCase()) {		
 			case "plshelpIreallyneedtopee":
 				if (!args[1])
 				{
@@ -58,7 +57,7 @@ bot.on("message", function (message) {
 			
 			case "list":
 				if (!args[1]) currentPage = 0;
-				else currentPage = args[1] - 1; //check if int
+				else currentPage = args[1] - 1; 
 				if (currentPage > pageTot){
 					message.channel.send("Page not found");
 					return;
