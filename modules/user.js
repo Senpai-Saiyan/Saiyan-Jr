@@ -35,13 +35,13 @@ module.exports = {
             .addField('**Bot**', user.bot, true);
 
         if (user.presence.status === 'offline') {
-            info.addField('**Status**', '<:offline:313956277237710868> Offline', true);
+            info.addField('**Status**', '<:invisible:499572706103132180> Offline', true);
         } else if (user.presence.status === 'idle') {
-            info.addField('**Status**', '<:away:313956277220802560> Idle', true);
+            info.addField('**Status**', '<:idle:499572706048475156> Idle', true);
         } else if (user.presence.status === 'online') {
-            info.addField('**Status**', '<:online:313956277808005120> Online', true);
+            info.addField('**Status**', '<:active:499572705717387269> Online', true);
         } else if (user.presence.status === 'dnd') {
-            info.addField('**Status**', '<:dnd:313956276893646850> Do Not Disturb', true);
+            info.addField('**Status**', '<:goaway:499572705809661963> Do Not Disturb', true);
         }
         if (member.hoistRole) {
             var hoist = member.hoistRole.name;
