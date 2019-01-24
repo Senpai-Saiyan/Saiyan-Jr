@@ -5,6 +5,5 @@ module.exports = {
     permission: 1,
     help: 'Returns a random emoji.',
   main: function(bot, msg) {
-    msg.delete();
   },
 }

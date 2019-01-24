@@ -30,7 +30,7 @@ module.exports = {
             var invite = new Discord.RichEmbed()
                 .setTitle(bot.user.username + ' Help Server')
                 .setColor([r, g, b])
-                .setDescription('Come join us at https://discord.gg/FGvGm5X for support and more!')
+                .setDescription('Come join us at https://discord.gg/8T8Abhy for support and more!')
                 .setTimestamp();
             msg.author.send({ embed: invite });
             */
@@ -60,7 +60,7 @@ module.exports = {
                     output += `\`\`${c.name}\`\` `;
                 });
                 help.addField(currentCategory + ' Commands:', output);
-                help.addField('Need more help?', 'https://discord.gg/FGvGm5X');
+                help.addField('Need more help?', 'https://discord.gg/8T8Abhy');
                 if (msg.channel.permissionsFor(msg.guild.me).has('EMBED_LINKS')) {
                     msg.channel.send(help);
                 } else {
@@ -82,7 +82,7 @@ module.exports = {
                     .addField('Description', `${command.help}`, true)
                     .addField('Usage', `${msg.prefix}${command.usage}`, true)
                     .setColor(msg.guild.me.displayHexColor)
-                    .setDescription('*Need more help? Join our support server at https://discord.gg/FGvGm5X*');
+                    .setDescription('*Need more help? Join our support server at https://discord.gg/8T8Abhy*');
                 /* if (command.conf.aliases != "") {
                     helpCommand.addField('Aliases', `${command.conf.aliases.join(', ')}`)
                 }*/

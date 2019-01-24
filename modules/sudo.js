@@ -1,4 +1,4 @@
-module.exports = {
+/* module.exports = {
     name: 'sudo',
     type: 'owner',
     usage: 'sudo',
@@ -12,3 +12,4 @@ module.exports = {
         bot.processMessage(msg);
     },
 };
+*/

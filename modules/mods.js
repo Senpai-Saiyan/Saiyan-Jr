@@ -10,7 +10,7 @@ module.exports = {
         var members = {};
 
         msg.guild.members.forEach(member => {
-            if (member.hasPermission('MANAGE_MESSAGES') && !member.user.bot) {
+            if (member.hasPermission('KICK_MEMBERS') && !member.user.bot) {
                 if (!members[member.hoistRole ? member.hoistRole.name : 'None']) {
                     members[member.hoistRole ? member.hoistRole.name : 'None'] = [];
                 }
@@ -21,7 +21,7 @@ module.exports = {
         var mods = new Discord.RichEmbed()
             .setTitle('Moderators on ' + msg.guild.name)
             .setThumbnail(msg.guild.iconURL)
-            .setFooter("Powered by a company I can't pronounce", bot.user.iconURL)
+            .setFooter("Powered by Aliens", bot.user.iconURL)
             .setColor(msg.guild.me.displayColor)
             .setTimestamp();
 

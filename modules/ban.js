@@ -3,7 +3,7 @@ module.exports = {
     name: 'ban',
     type: 'moderation',
     usage: 'ban <user> <reason>',
-    permission: 4,
+    permission: 3,
     help: 'Bans a user and puts in moderation logs.',
     main: function(bot, msg) {
         const Discord = require('discord.js');

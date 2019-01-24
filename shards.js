@@ -97,7 +97,7 @@ Please provide a value to select one of the search results ranging from 1-10.
 	} else if (command === 'stop') {
 		if (!msg.member.voiceChannel) return msg.channel.send('You are not in a voice channel!');
 		if (!serverQueue) return msg.channel.send('There is nothing playing that I could stop for you.');
-    return msg.channel.send('player has been stopped');
+    msg.channel.send('player has been stopped');
 		serverQueue.songs = [];
 		serverQueue.connection.dispatcher.end('Stop command has been used!');
 		return undefined;
@@ -197,8 +197,10 @@ function play(guild, song) {
 	dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);
 
 	serverQueue.textChannel.send(`🎶 Now Playing: **${song.title}**`);
+  
 }
 client.login(config.token);
+
 const Manager = new Discord.ShardingManager('./bot.js');
 Manager.spawn(1); // This example will spawn 2 shards (5,000 guilds);
 const http = require('http');
