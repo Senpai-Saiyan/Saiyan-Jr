@@ -42,6 +42,18 @@ readdir('./events/', (err, files) => {
     });
     bot.log(`Events loaded!`);
 });
+{
+bot.on('ready', () => {
+    console.log('Nickname Changable!');
+});
+
+bot.on('message', message => {
+if (message.content.includes(config.prefix+'changenick')) {
+    message.guild.me.setNickname(message.content.replace('&changenick ', ''));
+}
+});
+      bot.login(config.token);
+}
 
 if (bot.config.token) bot.login(bot.config.token);
 else if (process.env.TOKEN) bot.login(process.env.TOKEN);

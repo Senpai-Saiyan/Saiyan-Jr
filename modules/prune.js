@@ -6,6 +6,16 @@ module.exports = {
     permission: 2,
     help: 'Prunes messages from the channel.',
     main: function(bot, msg) {
+      msg.channel.send("Prune command down for maintenance. Apologies for any inconveniences. - Saiyan ")
+}
+}
+/* module.exports = {
+    name: 'prune',
+    type: 'moderation',
+    usage: 'prune <amount> | <user-mention> | bots',
+    permission: 2,
+    help: 'Prunes messages from the channel.',
+    main: function(bot, msg) {
         if (msg.member.hasPermission('MANAGE_MESSAGES') || msg.author.id === require('../config.json').owner) {
             var num = msg.content;
             if (!isNaN(num)) {
@@ -53,3 +63,4 @@ module.exports = {
         }
     },
 };
+*/

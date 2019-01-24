@@ -8,5 +8,7 @@ node-uuid
 uuid
 node_modules/
 shrinkwrap.yaml
-infig
 config.json
+infig
+
+

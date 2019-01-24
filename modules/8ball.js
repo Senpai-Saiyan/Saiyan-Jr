@@ -26,7 +26,9 @@ module.exports = {
             'My sources say no',
             'Outlook not so good',
             'Very doubtful',
-            'the hell kinda question is that? GTFO!'
+            'the hell kinda question is that? GTFO!',
+          'Maybe',
+          'No. Hell No. Nope. Sorry guy.'
         ];
         msg.reply(predictions[Math.floor(Math.random() * (predictions.length - 0))]);
     },
